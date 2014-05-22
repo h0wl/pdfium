@@ -1,0 +1,5 @@
+#summary Information about the library
+
+= Introduction =
+
+For more information about the library, see http://cdn01.foxitsoftware.com/pub/foxit/manual/enu/FoxitPDF_SDK20_Guide.pdf
