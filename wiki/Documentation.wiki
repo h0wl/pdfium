@@ -2,4 +2,6 @@
 
 = Introduction =
 
-For more information about the library, see http://cdn01.foxitsoftware.com/pub/foxit/manual/enu/FoxitPDF_SDK20_Guide.pdf
+For API documentation, see http://cdn01.foxitsoftware.com/pub/foxit/manual/enu/FoxitPDF_SDK20_Guide.pdf
+
+One public consumer of this library is Chromium's PDF plugin. You can see the source for it at http://src.chromium.org/viewvc/chrome/trunk/src/pdf/
