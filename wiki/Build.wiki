@@ -18,7 +18,7 @@ First is [https://code.google.com/p/gyp/ GYP], which generates platform-specific
 svn co http://gyp.googlecode.com/svn/trunk build/gyp
 }}}
 
-Then the [[https://code.google.com/p/v8/ V8] JavaScript engine which is used to evaluate script embedded in PDFs.
+Then the [https://code.google.com/p/v8/ V8] JavaScript engine which is used to evaluate script embedded in PDFs.
 {{{
 svn co http://v8.googlecode.com/svn/trunk v8
 }}}
