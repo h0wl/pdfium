@@ -1,4 +1,4 @@
-#summary How to build the library
+ #summary How to build the library
 
 = Building PDFium=
 
@@ -37,7 +37,13 @@ svn co http://src.chromium.org/svn/trunk/deps/third_party/cygwin@231940 v8/third
 
 
 ==Generate the build files==
-Now we use the GYP library to generate platform-specific build files
+Now we use the GYP library to generate platform-specific build files.
+
+On Windows:
 {{{
 build\gyp_pdfium
+}}}
+For all other platforms:
+{{{
+build/gyp_pdfium
 }}}
