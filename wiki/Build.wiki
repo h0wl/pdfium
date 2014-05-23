@@ -3,7 +3,7 @@
 = Building PDFium=
 
 ==Prerequisites==
-Install Python, svn, and git.
+Install Python, Subversion, and Git and make sure they're in your path.
 
 ==Get the code==
 {{{
