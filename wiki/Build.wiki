@@ -39,6 +39,8 @@ svn co http://src.chromium.org/svn/trunk/deps/third_party/cygwin@231940 v8/third
 ==Generate the build files==
 Now we use the GYP library to generate platform-specific build files.
 
+*NOTE* this step is still in review and hasn't landed yet.
+
 On Windows:
 {{{
 build\gyp_pdfium
