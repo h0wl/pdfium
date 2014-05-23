@@ -1,9 +1,11 @@
 #summary How to build the library
 
-= Prerequisites =
+= Building PDFium=
 
+==Prerequisites==
 Install Python, svn, and git.
 
+==Get the code==
 {{{
 git clone https://pdfium.googlesource.com/pdfium
 
@@ -31,4 +33,11 @@ svn co https://src.chromium.org/chrome/trunk/deps/third_party/icu46 v8/third_par
 For *Windows only*, we also need a Cygwin checkout which is used to generate some source files by V8:
 {{{
 svn co http://src.chromium.org/svn/trunk/deps/third_party/cygwin@231940 v8/third_party/cygwin
+}}}
+
+
+==Generate the build files==
+Now we use the GYP library to generate platform-specific build files
+{{{
+build\gyp_pdfium
 }}}
