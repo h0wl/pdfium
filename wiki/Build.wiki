@@ -1,0 +1,34 @@
+#summary How to build the library
+
+= Prerequisites =
+
+Install Python, svn, and git.
+
+{{{
+git clone https://pdfium.googlesource.com/pdfium
+
+cd pdfium
+}}}
+
+
+Now checkout a few projects that are needed to build.
+
+First is [https://code.google.com/p/gyp/ GYP], which generates platform-specific build files from the gyp and gypi files.
+{{{
+svn co http://gyp.googlecode.com/svn/trunk build/gyp
+}}}
+
+Then the [[https://code.google.com/p/v8/ V8] JavaScript engine which is used to evaluate script embedded in PDFs.
+{{{
+svn co http://v8.googlecode.com/svn/trunk v8
+}}}
+
+V8 depends on the ICU internationalization library. We fetch it from Chromium's repository.
+{{{
+svn co https://src.chromium.org/chrome/trunk/deps/third_party/icu46 v8/third_party/icu
+}}}
+
+For *Windows only*, we also need a Cygwin checkout which is used to generate some source files by V8:
+{{{
+svn co http://src.chromium.org/svn/trunk/deps/third_party/cygwin@231940 v8/third_party/cygwin
+}}}
