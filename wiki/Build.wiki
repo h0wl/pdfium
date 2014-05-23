@@ -1,4 +1,4 @@
- #summary How to build the library
+#summary How to build the library
 
 = Building PDFium=
 
