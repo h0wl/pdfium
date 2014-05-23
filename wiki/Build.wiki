@@ -37,9 +37,11 @@ svn co http://src.chromium.org/svn/trunk/deps/third_party/cygwin@231940 v8/third
 
 
 ==Generate the build files==
-Now we use the GYP library to generate platform-specific build files.
-
 *NOTE* this step is still in review and hasn't landed yet.
+
+Now we use the GYP library to generate the build files.
+
+At this point, you have two options. The first is to generate platform-specific build files, i.e. make files on Linux, sln files on Windows, and xcodeproj files on Mac.
 
 On Windows:
 {{{
@@ -49,3 +51,23 @@ For all other platforms:
 {{{
 build/gyp_pdfium
 }}}
+
+If you want to use the [http://martine.github.io/ninja/ Ninja] build system instead, set the GYP_GENERATORS environment variable to 'ninja' before running the above command.
+
+
+==Building the code==
+If you used Ninja, you can build the sample program by:
+{{{
+ninja -C out/Debug pdfium_test
+}}}
+
+If you're not using Ninja, then building is platform-specific.
+
+On Linux:
+{{{
+make pdfium_test
+}}}
+
+On Mac, open build/all.xcodeproj
+
+On Windows, open build\all.sln
