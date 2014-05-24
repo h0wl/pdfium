@@ -37,8 +37,6 @@ svn co http://src.chromium.org/svn/trunk/deps/third_party/cygwin@231940 v8/third
 
 
 ==Generate the build files==
-*NOTE* this step is still in review and hasn't landed yet.
-
 Now we use the GYP library to generate the build files.
 
 At this point, you have two options. The first is to generate platform-specific build files, i.e. make files on Linux, sln files on Windows, and xcodeproj files on Mac.
