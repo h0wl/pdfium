@@ -7,6 +7,8 @@ Get the chromium depot tools via the instructions at http://www.chromium.org/dev
 
 Also install Python, Subversion, and Git and make sure they're in your path.
 
+Optionally, you may want to install the [http://martine.github.io/ninja/ Ninja] build system (recommended) rather than using your platform-specific build system.
+
 ==Get the code==
 {{{
 mkdir pdfium
@@ -29,7 +31,7 @@ For all other platforms:
 build/gyp_pdfium
 }}}
 
-If you want to use the [http://martine.github.io/ninja/ Ninja] build system instead, set the GYP_GENERATORS environment variable to 'ninja' before running the above command.
+The second option is to use the [http://martine.github.io/ninja/ Ninja] build system. To do so, set the GYP_GENERATORS environment variable to 'ninja' before running the above command.
 
 
 ==Building the code==
@@ -54,7 +56,7 @@ On Mac, open build/all.xcodeproj
 On Windows, open build\all.sln
 
 ==Running the sample program==
-The pdfium_test program supports reading, parsing, and rasterizing the pages of a .pdf file to .ppm output image files (windows supports two other formats, and .png support is available for all platforms in an alternate branch (see branches section below).  For example:
+The pdfium_test program supports reading, parsing, and rasterizing the pages of a .pdf file to .ppm output image files (windows supports two other formats, and .png support is available for all platforms in an alternate branch (see branches section below)).  For example:
 {{{
 out/Debug/pdfium_test --ppm path/to/myfile.pdf
 }}}
